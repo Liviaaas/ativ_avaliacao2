@@ -1,0 +1,84 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e5caf9;
+    background-image: url("https://s-media-cache-ak0.pinimg.com/564x/fb/f7/c5/fbf7c51d59c978c5a30aef3bd6abb348.jpg");
+  }
+
+/* Estilo para mensagens de sucesso e erro */
+.message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-container{
+    background-color: #dac8ed;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(142, 142, 142, 0.452);
+    padding: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form-container label{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form-container input{
+    padding: 15px;
+    border: 1px solid #131313;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    max-width: 50%;
+    width: 50%;
+}
+
+.form-container a{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #512f76;    
+}
+.form-container a:hover{
+    transform: scale(1.10);
+    color: #230344;
+}
+
+.form-container button{
+    padding: 15px 30px;
+    background-color: #512f76;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.form-container button:hover{
+    transform: scale(1.05);
+    background-color: #2b0554;
+}
+@media screen and (max-width: 768px){
+    .form-container{
+        max-width: 90%;
+    }
+}
